@@ -1,7 +1,7 @@
 import "@d3vtool/strict-env/setup";
 import { CONFIG } from "./src/config";
 import { Kaze,  } from "@d3vtool/kazejs";
-import { UserController } from "./src/controllers/identity/user-controller";
+import { UserController } from "./src/controllers/user/user-controller";
 import { MailController } from "./src/controllers/mail/mail-controller";
 
 const app = new Kaze({
