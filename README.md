@@ -225,4 +225,3 @@ Sends an email by validating the provided email details and handling any email-r
 **Controller:**
 
 * `MailController.mail`: Handles the email sending logic, including validating the request body and performing the necessary actions to send the email.
-````
