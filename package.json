@@ -22,6 +22,7 @@
     "pg": "^8.15.6"
   },
   "scripts": {
+    "start": "bun index.ts",
     "dev": "bun run --watch index.ts"
   }
 }

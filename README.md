@@ -27,7 +27,7 @@ bun install
 To start the application, run:
 
 ```bash
-bun run index.ts
+bun start
 ```
 
 ## 🛠️ Setup Database
