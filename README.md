@@ -62,8 +62,8 @@ The following environment variables must be set for the application to run prope
 * **POSTGRES\_DB**: Name of the PostgreSQL database to connect to.
 * **DATABASE\_URL**: "postgres://${POSTGRES_USER}:${POSTGRES_PASS}@localhost/${POSTGRES_DB}"
 * **JWT\_SEC**: Secret key used for signing JWT tokens.
-* **EMAIL\_ID**: Your email address to be used for sending emails.
-* **EMAIL\_APP\_ID**: App-specific identifier for the email service (e.g., Mailgun or SendGrid).
+* **EMAIL\_ID**: Your gmail address to be used for sending emails.
+* **EMAIL\_APP\_ID**: App ID for the gmail service.
 
 ### Example `.env` file:
 
