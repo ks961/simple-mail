@@ -60,7 +60,7 @@ The following environment variables must be set for the application to run prope
 * **POSTGRES\_HOST**: Host for the PostgreSQL database (typically `localhost` or a remote server).
 * **POSTGRES\_PASS**: Password for the PostgreSQL user.
 * **POSTGRES\_DB**: Name of the PostgreSQL database to connect to.
-* **DATABASE\_URL**: The full connection URL for the database in the format: `postgres://USER:PASSWORD@HOST:PORT/DBNAME`.
+* **DATABASE\_URL**: "postgres://${POSTGRES_USER}:${POSTGRES_PASS}@localhost/${POSTGRES_DB}"
 * **JWT\_SEC**: Secret key used for signing JWT tokens.
 * **EMAIL\_ID**: Your email address to be used for sending emails.
 * **EMAIL\_APP\_ID**: App-specific identifier for the email service (e.g., Mailgun or SendGrid).
