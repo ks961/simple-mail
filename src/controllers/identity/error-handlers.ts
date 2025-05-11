@@ -1,0 +1,42 @@
+import type { KazeContext } from "@d3vtool/kazejs";
+import { ObjectValidationError } from "@d3vtool/utils";
+import { defaultServerError } from "../../errors/error-handlers/default-server-error";
+import { validationError } from "../../errors/error-handlers/validation-error";
+
+export function signupHandler(
+    ctx: KazeContext, 
+    error: unknown
+) {
+
+    if(error instanceof ObjectValidationError) {
+        return validationError(
+            ctx,
+            error,
+            400
+        );
+    }
+
+    defaultServerError(
+        ctx,
+        error
+    );
+}
+
+export function loginHandler(
+    ctx: KazeContext, 
+    error: unknown
+) {
+
+    if(error instanceof ObjectValidationError) {
+        return validationError(
+            ctx,
+            error,
+            401
+        );
+    }
+
+    defaultServerError(
+        ctx,
+        error
+    );
+}
