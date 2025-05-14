@@ -1,5 +1,5 @@
 import type { KazeContext } from "@d3vtool/kazejs";
-import { ObjectValidationError } from "@d3vtool/utils";
+import { ObjectValidationError } from "@d3vtool/kazejs/validator";
 import { defaultServerError } from "../../errors/error-handlers/default-server-error";
 import { validationError } from "../../errors/error-handlers/validation-error";
 

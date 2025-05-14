@@ -2,14 +2,17 @@ import { loginHandler, signupHandler } from "./error-handlers";
 import { IdentityService } from "../../services/identity-service";
 import { loginValidator, signupValidator } from "../../v-schemas/credentials-schema";
 import { defaultServerError } from "../../errors/error-handlers/default-server-error";
+import { type KazeContext } from "@d3vtool/kazejs";
 import {
     Post, 
     Middlewares, 
     ParentRoute, 
-    ErrorHandler, 
-    jsonValidate, 
-    type KazeContext
-} from "@d3vtool/kazejs";
+    ErrorHandler
+} from "@d3vtool/kazejs/kaze-class";
+
+import {
+    jsonValidate
+} from "@d3vtool/kazejs/validator"
 
 @ParentRoute("/users")
 @ErrorHandler(defaultServerError)

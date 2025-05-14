@@ -24,7 +24,7 @@ class MailService {
         body: string
     ) {
         const mailOptions: Mail.Options = {
-            from: `${from} <${process.env.MAIL_ID}>`,
+            from: `${from} <${process.env.EMAIL_ID}>`,
             to: toMail,
             subject: subject.trim(),
             html: body.trim(),

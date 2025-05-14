@@ -1,5 +1,4 @@
-import { Validator, type VInfer } from "@d3vtool/utils";
-
+import { Validator, type VInfer } from "@d3vtool/kazejs/validator";
 
 export const mailSchema = {
     from: Validator.string().minLength(5), 

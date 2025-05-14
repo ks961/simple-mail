@@ -1,4 +1,4 @@
-import { Validator, type VInfer } from "@d3vtool/utils";
+import { Validator, type VInfer } from "@d3vtool/kazejs/validator";
 
 const credsSchema = {
     email: Validator.string().email(),

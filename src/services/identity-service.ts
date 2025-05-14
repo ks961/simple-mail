@@ -12,7 +12,7 @@ import {
     InvalidJwt, 
     signJwt, 
     verifyJwt
-} from "@d3vtool/utils";
+} from "@d3vtool/kazejs/jwt";
 
 
 export class IdentityService {

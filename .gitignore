@@ -176,5 +176,6 @@ dist
 
 
 .env
+*.d.ts
 
 drizzle/

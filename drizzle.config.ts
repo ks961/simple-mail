@@ -1,4 +1,4 @@
-import "@d3vtool/strict-env/setup";
+import "@d3vtool/strict-env/tsetup";
 import { CONFIG } from "./src/config";
 import { defineConfig } from 'drizzle-kit';
 

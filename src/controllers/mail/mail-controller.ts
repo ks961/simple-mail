@@ -1,4 +1,13 @@
-import { ErrorHandler, jsonValidate, Middlewares, ParentRoute, Post, type KazeContext } from "@d3vtool/kazejs";
+import { type KazeContext } from "@d3vtool/kazejs";
+import {
+    Post, 
+    Middlewares,
+    ErrorHandler
+} from "@d3vtool/kazejs/kaze-class";
+
+import {
+    jsonValidate
+} from "@d3vtool/kazejs/validator";
 import { mailValidator, type TMailSchema } from "../../v-schemas/mail-body-schema";
 import { mailErrorHanlder } from "./error-handler";
 import { mailService } from "../../services/mail-service";

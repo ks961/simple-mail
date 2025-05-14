@@ -1,6 +1,6 @@
-import "@d3vtool/strict-env/setup";
+import "@d3vtool/strict-env/tsetup";
 import { CONFIG } from "./src/config";
-import { Kaze,  } from "@d3vtool/kazejs";
+import { Kaze } from "@d3vtool/kazejs";
 import { UserController } from "./src/controllers/user/user-controller";
 import { MailController } from "./src/controllers/mail/mail-controller";
 
